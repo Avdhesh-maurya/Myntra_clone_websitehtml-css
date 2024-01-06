@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      margin-top: 100px;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      color: #333;
+    }
+
+    input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .terms-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+
+    .terms {
+      color: #333;
+    }
+
+    .continue-btn {
+      background-color: #ff3366;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .continue-btn:hover {
+      background-color: #e62958;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Log in</h2>
+    <form>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button class="continue-btn">Continue</button>
+
+      <div class="terms-container">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms" class="terms">I agree to the <a href="#">Terms and Conditions</a></label>
+      </div>
+
+      <p>Don't have an account? <a href="#">Sign Up</a></p>
+    </form>
+  </div>
+
+</body>
+
+</html>
